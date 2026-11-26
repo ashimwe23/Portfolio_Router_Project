@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 
 function Projects() {
@@ -8,16 +9,16 @@ function Projects() {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white p-10">
-      <h1 className="text-4xl font-bold mb-8">
-        My Projects
-      </h1>
+    <div>
+      <h2 className="text-xl font-semibold mb-6">
+        Here are my projects
+      </h2>
 
       {projects.map((project) => (
         <div key={project.id} className="mb-5">
-          <h2 className="text-xl mb-2">
+          <h3 className="text-xl mb-2">
             {project.name}
-          </h2>
+          </h3>
 
           <Link
             to={`/projects/${project.id}`}
