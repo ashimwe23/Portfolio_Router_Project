@@ -21,13 +21,10 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
 
-        {/* Parent route */}
+        
         <Route path="/projects" element={<ProjectsLayout />}>
 
-          {/* Default child route */}
           <Route index element={<Projects />} />
-
-          {/* Dynamic child route */}
           <Route path=":id" element={<ProjectDetails />} />
 
         </Route>
